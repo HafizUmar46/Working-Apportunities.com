@@ -1,0 +1,74 @@
+# Website for Client
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Registration and Opportunities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f8cdda, #1d2b64);
+            background-size: cover;
+            color:white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .registration {
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            width: 300px;
+        }
+        .opportunities {
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            width: 300px;
+        }
+        input[type="text"], input[type="email"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;n
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Center</h1>
+    <p>Join us for amazing opportunities!</p>
+</header>
+
+<div class="registration">
+    <h2>Registration</h2>
+    <form action="/submit_registration" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+		<input type="password" name="password" placeholder="password" required>
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+<div class="opportunities">
+    <h2>Available Opportunities</h2>
+    <p>1.<a href="website2.html" style="color:red;"> Free lancing</a></p>
+    <p>2.<a href="website3.html" style="color:green;"> Coding</a></p>
+    <p>3.<a href="website4.html" style="color:yellow;"> Teaching</a></p>
+</div>
+
+</body>
+</html>
